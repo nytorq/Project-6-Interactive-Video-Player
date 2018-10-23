@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Treehouse Lecture #1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/mediaelement-and-player.min.js"></script>
+
+  <link href="css/mediaelementplayer.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/application.css">
+</head>
+
+<body>
+  <div class="container">
+    <video class="video" controls muted>
+      <source src="video/video.mp4" type="video/mp4">
+      <source src="video/video.ogg" type="video/ogg">
+        <track label="English Captions" kind="subtitles" srclang="en" src="video/english-captions.vtt" crossorigin="" default/>
+    </video>
+    <!-- <button id="findMatch" style="margin: 2em auto;">Find match</button> -->
+    <!-- <p><span class="highlighted">Now that we've looked at the architecture of the internet, let's see how you might </span>connect your personal devices to the internet inside your house.  Well there are many ways to connect to the internet, and most often people connect wirelessly.</p> -->
+    <p>Now that we've looked at the architecture of the internet, let's see how you might connect your personal devices to the internet inside your house.  Well there are many ways to connect to the internet, and most often people connect wirelessly.</p>
+    <p>Let's look at an example of how you can connect to the internet. If you live in a city or a town, you probably have a coaxial cable for cable Internet, or a phone line if you hae DSL, running to the outside of your house, that connects you to the Internet Service Provider, or ISP.  If you live far out in the country, you'll more likely have a dish outside your house, connecting you wirelessly to your closest ISP, or you might also use the telephone system.</p>
+    <p>Whether a wire comes straight from the ISP hookup outside your house, or it travels over radio waves from your roof,  the first stop a wire will make once inside your house, is at your modem.  A modem is what connects the internet to your network at home.  A few common residential modems are DSL or</p>
+  </div><!-- /container -->
+<script>
+  $('video').mediaelementplayer({
+    features: ['playpause', 'current', 'progress','duration', 'volume', 'fullscreen'],
+    startLanguage: 'en',
+    stretching: 'fill'
+  });
+</script>
+<script src="js/text-highlighter.js"></script>
+</body>
+
+</html>
