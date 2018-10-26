@@ -438,14 +438,31 @@ p {
 .highlighted {
   color: #ff9c33; }
 
+.captions {
+  transition: color 0.25s ease; }
+  .captions:hover {
+    color: #4777ff;
+    cursor: pointer;
+    text-decoration: underline; }
+
 video {
   max-width: 1024px;
   width: 100%; }
 
 .mejs__controls {
-  background: rgba(255, 255, 255, 0.3); }
+  background: rgba(71, 119, 255, 0.65) !important;
+  height: 3.75em;
+  padding: 0.6em; }
 
-.mejs__duration {
-  font-size: 0.9em; }
+.mejs__time {
+  font-size: 0.3em;
+  padding: 1.5em 0;
+  border-radius: 1em; }
+
+.mejs__time-loaded {
+  border-radius: 1em; }
+
+.mejs__time-current {
+  background: rgba(96, 255, 86, 0.58); }
 
 /*# sourceMappingURL=application.css.map */

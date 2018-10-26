@@ -1,8 +1,9 @@
 // ==========================================================================
-// Utility Imports
+// Functions
 // ==========================================================================
 
-@import 'variables';
-@import 'mixins';
-@import 'extends';
-@import 'functions';
+// PX to Em calculator
+
+@function em($target, $context: $base__font-size) {
+  @return ($target/$context) * 1em;
+}

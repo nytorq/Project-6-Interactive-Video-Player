@@ -284,7 +284,7 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
 .mejs__time-float-current,
 .mejs__time-float-corner,
 .mejs__time-marker {
-    border-radius: 2px;
+    border-radius: 16px;
     cursor: pointer;
     display: block;
     height: 10px;
