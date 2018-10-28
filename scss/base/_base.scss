@@ -23,9 +23,15 @@ p {
 }
 
 .container {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 1.5em;
+  @extend %container;
+  @include e(video) {
+    padding: 0;
+    @include mq($break-t) {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 1.5em;
+    }
+  }
 }
 
 .centered {

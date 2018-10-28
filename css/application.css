@@ -5,6 +5,11 @@
   max-width: 1024px;
   flex-grow: inherit; }
 
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1.5em; }
+
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
    ========================================================================== */
@@ -426,10 +431,13 @@ ul {
 p {
   color: #838383; }
 
-.container {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 1.5em; }
+.container__video {
+  padding: 0; }
+  @media (min-width: 768px) {
+    .container__video {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 1.5em; } }
 
 p {
   max-width: 640px;
